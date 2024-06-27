@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Parking Pricing System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Smart Parking Pricing System</h1>
+    <form action="/calculate_price" method="post">
+        <label for="number_plate">Car Number Plate:</label>
+        <input type="text" id="number_plate" name="number_plate" required><br><br>
+
+        <label for="parking_slot">Parking Slot Place:</label>
+        <select id="parking_slot" name="parking_slot" required>
+            <option value="1">Slot 1</option>
+            <option value="2">Slot 2</option>
+            <option value="3">Slot 3</option>
+            <option value="4">Slot 4</option>
+        </select><br><br>
+
+        <label for="entry_time">Entry Time (HH:MM):</label>
+        <input type="time" id="entry_time" name="entry_time" required><br><br>
+
+        <label for="exit_time">Exit Time (HH:MM):</label>
+        <input type="time" id="exit_time" name="exit_time" required><br><br>
+
+        <input type="submit" value="Calculate Price">
+    </form>
+</body>
+</html>
