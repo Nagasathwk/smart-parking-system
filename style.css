@@ -1,0 +1,58 @@
+body {
+    background-image: url('parking-background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+
+h1 {
+    color: #444;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    padding: 5px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bill {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
