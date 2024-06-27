@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Bill</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="bill">
+        <h1>Parking Bill</h1>
+        <p><strong>Car Number Plate:</strong> {{ number_plate }}</p>
+        <p><strong>Parking Slot:</strong> {{ parking_slot }}</p>
+        <p><strong>Entry Time:</strong> {{ entry_time_str }}</p>
+        <p><strong>Exit Time:</strong> {{ exit_time_str }}</p>
+        <p><strong>Duration of Parking:</strong> {{ duration|round(2) }} hours</p>
+        <p><strong>Added Value for Peak Hours:</strong> ₹{{ peak_cost|round(2) }}</p>
+        <p><strong>Additional Slot Charge:</strong>₹ {{ extra_charge|round(2) }}</p>
+        <h2>Total Price: ₹{{ total_cost|round(2) }}</h2>
+    </div>
+    <a href="/" class="back-button">Go Back</a>
+</body>
+</html>
